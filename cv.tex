@@ -1,0 +1,99 @@
+https://github.com/lprajus2007/CurriculumVitae.git%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
+%% Copyright 2014 Satya Sampathirao (satyalak@buffalo.edu).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage{verbatim}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+\setlength{\makecvtitlenamewidth}{12cm}
+\setlength{\headheight}{0.6in} 
+\setlength{\headsep}{25pt}
+\setlength{\topmargin}{0pt}
+\setlength{\footskip}{25pt}
+\setlength{\marginparsep}{11pt}
+\renewcommand*{\namefont}{\fontsize{22}{29}\mdseries\upshape}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.80,top=1.3cm, bottom=1.3cm, left=1.4cm, right=1.4cm]{geometry}
+\setlength{\hintscolumnwidth}{2.2cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Satya Lakshmipathi Raju}
+\familyname{Sampathirao}
+\title{Curriculum Vitae}
+\address{1400 Millersport Hwy \#316}{Buffalo, NY 14221}    % optional, remove the line if not wanted
+\mobile{+1-716-803-4566}                    % optional, remove the line if not wanted
+\email{satyalak@buffalo.edu}                      % optional, remove the line if not wanted
+\homepage{http://www.satyalak.tk}                % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\vspace*{-1.2cm}
+\section{Education}
+\cventry{2013--present}{Master of Science, Computer Science}{University at Buffalo - The State University of New York}{Buffalo, NY. (Expected May, 2015)}{}{}
+\cventry{2009--2013}{Bachelor of Technology, Computer Science and Engineering}{JNT University}{Kakinada, India}{}{}
+\vspace*{-0.2cm}
+\section{Experience}
+\cventry{Summer 2012}{Software Developer Intern}{TechTammina Ltd}{Vizag, India}{}{
+Developed a web based intrusion detection system for MANETs and implemented the A3ACKs system using Hibernate framework. 
+}
+\cventry{2011--2013}{Campus Web Technician}{MVGR College of Engineering}{Vizianagaram, India}{}{
+Assisted students to resolve server issues in the Web Technologies Labpratory. Led the development teams of 3 websites designed for technical fests hosted by the college and also, developed a web based student knowledge networking platform - CampusKonnect using JSP \& Spring Framework.
+}
+\section{Certifications}
+\cvline{Java}{Oracle certified Java SE6 Professional}
+\cvline{Oracle DB}{Completed the Oracle certified Oracle 11g Professional Training.}
+
+\section{Technical Experience}
+\subsection{Proficient With}
+\cvline{languages}{C, C++, Python,  J2SE \& J2EE, Scala, HTML and CSS}
+\cvline{technologies}{Spring \& Hibernate, Hadoop(MapReduce \& HDFS), MySQL, NumPy \& SciPy, \LaTeX{}, jQuery, jQuery Mobile,  Windows, Ubuntu, Red Hat Linux and OS X}
+\subsection{Have Experience With}
+\cvline{languages}{PHP, C\#, UML, JavaScript and Unix Shell Scripting }
+\cvline{technologies}{AngularJS, Ember, Apache Tomcat, ASP.NET, Visual Studio, Eclipse, Drupal CMS and Wordpress}
+
+\section{Academic Projects}
+\subsection{University at Buffalo, NY}
+\cvitem {Java \& Android SDK}
+{\textbf{Indoor Positioning System:} Working on developing an Android app that works as a Geo-magnetic sensor based Indoor positioning system using IndoorAtlas API. }
+\cvitem {Scala}
+{\textbf{Movie Recommendation System:} Developed a movie recommendation system with 10 million ratings from MovieLens database using Scala with MLlib on Apache Spark.}
+\cvitem {Hadoop MapReduce}
+{\textbf{Distributed Search Engine:} Developed a high performance distributed search engine using Java on Hadoop framework for parallel and distributed computing.}{}
+\cvitem {Python}
+{\textbf{Face Recognizer:} Developed a face recognition system trained and tested using the Yale Face Database from UCSD using Numpy \& SciPy Python extensions.}{}
+\cvitem {C}
+{\textbf{GPeer File Sharing:} Developed a file sharing program using a modified version of BitTorrent protocol with C language. }{}
+\vspace*{-1mm}
+\subsection{MVGR College of Engineering, India}
+\cvitem{C\#}
+{\textbf{Network Monitor:} Developed a web based network monitoring and management tool using C\# and Microsoft SQL Server.}
+\cvitem{Java \& Android SDK}
+{\textbf{Love Meter:} Developed an Android app which generates a love value using names of 2 people and displays an animated love meter.}
+
+\end{document}

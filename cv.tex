@@ -1,5 +1,4 @@
 %% start of file `template.tex'.
-%% https://github.com/lprajus2007/CurriculumVitae.git
 %% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
 %% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
 %% Copyright 2014 Satya Sampathirao (satyalak@buffalo.edu).
@@ -13,21 +12,21 @@
 \usepackage{verbatim}
 
 % moderncv themes
-\moderncvstyle{classic}
+\moderncvstyle{casual}
 \moderncvcolor{green}
-
-\setlength{\makecvtitlenamewidth}{18cm}
+% \renewcommand{\namefont}{\fontsize{32}{32}\mdseries\upshape}
 \setlength{\headheight}{0.8in} 
 \setlength{\headsep}{25pt}
 \setlength{\topmargin}{0pt}
-\setlength{\footskip}{25pt}
+\setlength{\footskip}{18pt}
 \setlength{\marginparsep}{11pt}
 \renewcommand*{\namefont}{\fontsize{28}{34}\mdseries\upshape}
+\renewcommand*{\titlefont}{\fontsize{14}{0}\mdseries}
 
 \usepackage[utf8]{inputenc}                   
 
 % adjust the page margins
-\usepackage[scale=0.80,top=1.4cm, bottom=1.4cm, left=1.4cm, right=1.4cm]{geometry}
+\usepackage[scale=0.75,top=1.4cm, bottom=1.8cm, left=1.4cm, right=1.4cm]{geometry}
 \setlength{\hintscolumnwidth}{2.2cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 
@@ -36,11 +35,11 @@
 % personal data
 \firstname{Satya}
 \familyname{Sampathirao}
-\title{Software Developer}
-\address{1400 Millersport Hwy \#419}{Buffalo, New York 14221}    % optional, remove the line if not wanted
+\title{Software Engineer in (love) => \{with (JS)\}}
+\address{1460 Little Raven Street \#2-233}{Denver, Colorado 80202}    % optional, remove the line if not wanted
 \mobile{+1-716-803-4566}                    % optional, remove the line if not wanted
 \email{satyalak@buffalo.edu}                      % optional, remove the line if not wanted
-\homepage{www.satyalak.com}                % optional, remove the line if not wanted
+\homepage{www.satyalak.me}                % optional, remove the line if not wanted
 
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
 %\makeatletter
@@ -59,40 +58,39 @@
 \cventry{2009 -- 2013}{Bachelor of Technology, Computer Science and Engineering}{JNT University}{Kakinada, India}{}{}
 \vspace*{-0.2cm}
 \section{Experience}
-\cventry{Summer 2012}{Software Developer - Intern}{TechTammina Ltd}{Vizag, India}{}{
-Worked with a team of 5 in an Agile software development environment to develop a web based Enterprise Performance Management (EPM) system using Spring and Hibernate frameworks 
+\cventry{2015 - Current}{Software Engineer - Full Stack}{Oath Inc. - A Verizon Company}{New York, NY}{}{
+I'm working on the full technology stack at StyleMePretty.com building rich web experiences. Some of the technologies I work on include ReactJS, NodeJS, PHP, MySQL and AWS.}
+\cventry{}{}{}{}{}{}
+\cventry{Summer 2012}{Software Developer - Intern}{TechTammina Ltd}{India}{}{
+Helped the internal applications team to develop a web based EPM system using Spring and Hibernate.
 }
-\cventry{2011 -- 2013}{Campus Web Developer}{MVGR College of Engineering}{Vizianagaram, India}{}{
-Developed a LAN based student knowledge networking platform using Spring Framework. Also, led the development teams of websites designed for technical symposiums hosted by the college }
+
+\section{Technical Expertise}
+\cvline{languages}{Python, Java, PHP (Laravel, Symfony), JavaScript, HTML5 and CSS3 (SASS, LESS)}
+\cvline{technologies \& frameworks}{ReactJS \& React Native, NodeJS, AngularJS, Webpack, AWS (EC2, SQS, S3, ELB), Wordpress, MongoDB and MySQL}
+\cvline{software}{Sublime, Adobe CC, Eclipse, Android Studio and Git}
+\cvline{platforms}{MacOS, Linux and Android}
+
 \section{Certifications}
 \cvline{Java}{Oracle certified Java SE6 Professional}
 \cvline{Bootstrap}{Microsoft certified Honor Code Certificate on Bootstrap}
 
-\section{Technical Experience}
-\cvline{languages}{C, C++, Python,  Java, JavaScript, UML, HTML5, CSS3 and \LaTeX{}}
-\cvline{technologies}{jQuery, AngularJS, Bootstrap, Amazon Web Services (AWS), Spring, Hibernate and MySQL}
-\cvline{software}{Adobe Creative Suite, Eclipse, Android Studio and Git}
-\cvline{platforms}{Windows, Linux and Android}
-
+\section{More About My Work}
+\subsection{Oath Inc. (Aol. + Yahoo!)}
+\cvitem {ReactJS \& NodeJS} 
+{\textbf {Style Me Pretty:} Built high-performance universal JS applications leveraging the power of ReactJS and NodeJS to deliver super-fast browsing experience to millions of visitors. Worked on building new web and mobile products that are part of the Yahoo-Huffpost Lifestyles Network.}
 \section{Academic Projects}
 \subsection{University at Buffalo, New York}
 \cvitem {Android Studio}
-{\textbf{Indoor Positioning System:} Developing an Android app that works as an Indoor positioning system based on the Accelerometer, Magnetometer and Gyroscope inputs using Google Maps Android API and IndoorAtlas SDK}
-\cvitem {Scala}
-{\textbf{Movie Recommendation:} Developed a movie recommendation system with 10 million ratings from MovieLens database and deployed it on Amazon EC2 using Scala on Apache Spark MLlib. The UI was built using HTML5, CSS and JQuery}
+{\textbf{Indoor Positioning System:} Developed an Android app that works as an Indoor positioning system based on gyroscope \& magnetometer inputs using Google Maps Android API and IndoorAtlas SDK}
+\cvitem {Scala, Apache Spark \& MongoDB}
+{\textbf{Movie Recommendation:} Developed a movie recommendation system with 10 million ratings from MovieLens database and deployed it on AWS using Scala on Apache Spark MLlib. The UI was built using HTML5, CSS and AngularJS}
 \cvitem {Python}
 {\textbf{Face Recognition:} Developed a face recognition system trained and tested using the Yale Face Database from UCSD using NumPy \& SciPy Python extensions}{}
-\cvitem {C}
-{\textbf{File Sharing:} Developed a file sharing program that can share files as chunks in a P2P model with a modified version of BitTorrent protocol using C programming}{}
 \vspace*{-1mm}
 \subsection{JNT University, India}
 \cvitem{Java EE}
 {\textbf{Network Monitor:} Developed a web based network management tool using JSP and MySQL}
-\cvitem{Android SDK}
+\cvitem{Android SDK \& XMPP}
 {\textbf{Messaging:} Developed an Android app which enables students to communicate with their course instructors and get real-time feedback }
-\section{Individual Projects}
-\cvitem{Bootstrap}{\textbf{Portfolio Catalogue:} Developed a web application that displays a catalog of portfolio websites using Bootstrap, JQuery, JSP and MySQL}
-
-\cvitem{Spring MVC}{\textbf{RSS Aggregator:} Developed a web application that acts as an RSS Feed Reader using ROME Java utility and Spring framework. Working on extending it to PubSubHubbub}
-
 \end{document}

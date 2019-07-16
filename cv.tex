@@ -7,9 +7,11 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[12pt,a4paper,sans]{moderncv}
 
 \usepackage{verbatim}
+\usepackage{xcolor}
+\usepackage{fontawesome}
 
 % moderncv themes
 \moderncvstyle{casual}
@@ -18,15 +20,15 @@
 \setlength{\headheight}{0.8in} 
 \setlength{\headsep}{25pt}
 \setlength{\topmargin}{0pt}
-\setlength{\footskip}{18pt}
+\setlength{\footskip}{25pt}
 \setlength{\marginparsep}{11pt}
 \renewcommand*{\namefont}{\fontsize{28}{34}\mdseries\upshape}
-\renewcommand*{\titlefont}{\fontsize{14}{0}\mdseries}
+\renewcommand*{\titlefont}{\fontsize{16}{0}\mdseries}
 
 \usepackage[utf8]{inputenc}                   
 
 % adjust the page margins
-\usepackage[scale=0.75,top=1.4cm, bottom=1.8cm, left=1.4cm, right=1.4cm]{geometry}
+\usepackage[scale=0.8,top=2cm, bottom=2.6cm, left=1.5cm, right=1.5cm]{geometry}
 \setlength{\hintscolumnwidth}{2.2cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 
@@ -35,11 +37,13 @@
 % personal data
 \firstname{Satya}
 \familyname{Sampathirao}
-\title{Software Engineer in (love) => \{with (JS)\}}
-\address{1460 Little Raven Street \#2-233}{Denver, Colorado 80202}    % optional, remove the line if not wanted
-\mobile{+1-716-803-4566}                    % optional, remove the line if not wanted
-\email{satyalak@buffalo.edu}                      % optional, remove the line if not wanted
+\title{Fullstack Engineer with expertise in TypeScript/JavaScript, React, NodeJS \& Java}
+\address{3806-561 Sherbourne St, Toronto, ON}{}    % optional, remove the line if not wanted
+\mobile{+1-647-517-4566}                    % optional, remove the line if not wanted
+\email{lprajus2007@gmail.com}                      % optional, remove the line if not wanted
 \homepage{www.satyalak.me}                % optional, remove the line if not wanted
+\extrainfo{%
+\faLinkedin \  \httplink{www.linkedin.com/in/satyalak} \ \  \textbullet \ \  \faGithub \  \httplink{www.github.com/lprajus2007}}
 
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
 %\makeatletter
@@ -52,45 +56,96 @@
 %----------------------------------------------------------------------------------
 \begin{document}
 \maketitle
-\vspace*{-1.1cm}
-\section{Education}
-\cventry{2013 -- 2015}{Master of Science, Computer Science}{University at Buffalo - SUNY}{Buffalo, New York}{}{}
-\cventry{2009 -- 2013}{Bachelor of Technology, Computer Science and Engineering}{JNT University}{Kakinada, India}{}{}
-\vspace*{-0.2cm}
+\vspace{-1cm}
+\section{Summary}
+{Solution-oriented Engineer with a Masters in Computer Science and a wide variety of professional and academic experience. Quick learner and highly motivated. Passionate about next generation technologies and innovations in information exchange. }
+\vspace{0.1cm}
 \section{Experience}
-\cventry{2015 - Current}{Software Engineer - Full Stack}{Oath Inc. - A Verizon Company}{New York, NY}{}{
-I'm working on the full technology stack at StyleMePretty.com building rich web experiences. Some of the technologies I work on include ReactJS, NodeJS, PHP, MySQL and AWS.}
-\cventry{}{}{}{}{}{}
-\cventry{Summer 2012}{Software Developer - Intern}{TechTammina Ltd}{India}{}{
-Helped the internal applications team to develop a web based EPM system using Spring and Hibernate.
+\cventry{April 2019 - current}{Full-Stack Engineer}{\newline\color{darkgray}{\textbf{Polymath Studios Inc.}}}{Toronto, ON}{}
+{
+Worked on building DApps that run on the Ethereum blockchain. Worked on Security Token Offering (STO) solutions for raising capital on the blockchain.\textbf{\emph{ ReactJS, TypeScript, Jest, NodeJS, GoLang and PostgreSQL}} are some of the technologies I worked on.
+}
+\vspace{0.3cm}
+\cventry{July 2018 - Jan 2019}{Software Engineer II}{\newline\color{darkgray}{\textbf{Transportation Mobility - Trimble Inc.}}}{Minneapolis, MN}{}
+{
+Worked with the OEM Applications team at PeopleNet to build the next-generation of transportation and logistics software. My job responsibilities span from participating in architectural discussions to implementing cutting-edge technologies into the products. Some of the technologies I worked on include \textbf{\emph{Spring Boot, Serverless framework, AWS, NodeJS, Angular 2 and ES6 JavaScript.}}
+\begin{itemize}
+\item Built a serverless application for the delivery of alert notifications to client vehicles using AWS technologies such as Lambda, API Gateway, DynamoDB, SNS and SQS.
+\item Worked with Hibernate/JPA to implement a new persistence layer for our legacy notification service and Spring Boot to implement new API endpoints.
+\item Worked in an intense TDD environment and implemented several testing frameworks such as Spock, Mocha and Chai.
+\end{itemize}
+}
+\vspace{0.3cm}
+\cventry{May 2015 - June 2018}{Software Engineer - Fullstack}{\newline\color{darkgray}{\textbf{Aol./Oath Inc./Verizon Media}}}{New York, NY}{}
+{
+I worked on the full technology stack to build mobile and web products at \textbf{\color{darkgray}{StyleMePretty.com}} (Part of the Yahoo-Huffpost Lifestyles Network). Built high-performance Universal Javascript applications leveraging the power of ReactJS and NodeJS to deliver super-fast app experiences to millions of visitors. As of 2017, the site had \emph{32 million monthly page views} and was widely considered a mainstay of the wedding industry. Some of the technologies I worked on include \textbf{\emph{ReactJS, Redux, NodeJS, ES6/Babel, PHP, MySQL and AWS.}}
+\begin{itemize}
+\item Worked extensively on implementing complex single page apps using modern JS frameworks such as NodeJS, ReactJS, GraphQL and Redux.
+\item Worked on implementing various data-intensive APIs consumed by the front-end apps using Object-Oriented PHP (Laravel and Eloquent). 
+\item Worked on CI/CD process for deployments and updates using Jenkins. Also worked on application reliability, testing and production support within an AWS environment (EC2, SQS, S3 and ELB).
+\item Built data visualization and monitoring tools for revenue, performance and social media tracking.
+\end{itemize}
+}
+\vspace{0.3cm}
+\cventry{Summer 2012}{Software Developer - Intern}{\newline \color{darkgray}{\textbf{TechTammina Ltd}}}{India}{}{
+Worked as an intern with the Internal Apps team at TechTammina to develop a web-based Enterprise Performance Management (EPM) tool.
+\vspace{0.2cm}
+\begin{itemize}
+\item Worked with Spring Boot to build APIs and backend modules.
+\item AngularJS and Bootstrap were used to build the frontend for the management dashboard.
+\end{itemize}
 }
 
+%% EDUCATION SECTION %%
+\vspace{0.6cm}
+\section{Education}
+\cventry{2013 -- 2015}{Master of Science, Computer Science}{\newline The State University of New York}{Buffalo, NY}{}{
+\begin{itemize}
+\item Specialized in Networking and Distributed Computation domains.
+\item Worked on Parallel Algorithms, Computer Architecture,  Mobile Computation and Artificial Intelligence as part of the coursework. Build several Android and Web apps to learn hands-on.
+\item Built an Android app that leverages Indoor Positioning System techniques for the Capstone Project.
+\end{itemize}
+}
+\vspace{0.3cm}
+\cventry{2009 -- 2013}{Bachelor of Technology, Computer Science and Engineering}{\newline JNT University}{Kakinada, India}{}{
+\begin{itemize}
+\item Worked with C, C++ and Java as a part of the curriculum.
+\item Built a web based network management tool using Java Spring framework for the Capstone.
+\end{itemize}
+}
+
+\vspace{0.2cm}
 \section{Technical Expertise}
-\cvline{languages}{Python, Java, PHP (Laravel, Symfony), JavaScript, HTML5 and CSS3 (SASS, LESS)}
-\cvline{technologies \& frameworks}{ReactJS \& React Native, NodeJS, AngularJS, Webpack, AWS (EC2, SQS, S3, ELB), Wordpress, MongoDB and MySQL}
-\cvline{software}{Sublime, Adobe CC, Eclipse, Android Studio and Git}
+\cvline{languages}{TypeScript, JavaScript, GoLang, HTML5 and CSS3 (SASS, LESS), PHP (Laravel, Symfony), Java, Python}
+\cvline{technologies/ frameworks}{ReactJS \& React Native, Apollo \& GraphQL, Redux, NodeJS, AngularJS, Webpack, AWS (EC2, SQS, S3, ELB), Wordpress, MongoDB and MySQL}
+\cvline{software}{Sublime, Adobe CC, IntelliJ IDEA, Android Studio and Git}
 \cvline{platforms}{MacOS, Linux and Android}
 
+\vspace{0.5cm}
 \section{Certifications}
 \cvline{Java}{Oracle certified Java SE6 Professional}
 \cvline{Bootstrap}{Microsoft certified Honor Code Certificate on Bootstrap}
 
-\section{More About My Work}
-\subsection{Oath Inc. (Aol. + Yahoo!)}
-\cvitem {ReactJS \& NodeJS} 
-{\textbf {Style Me Pretty:} Built high-performance universal JS applications leveraging the power of ReactJS and NodeJS to deliver super-fast browsing experience to millions of visitors. Worked on building new web and mobile products that are part of the Yahoo-Huffpost Lifestyles Network.}
+\vspace{0.5cm}
 \section{Academic Projects}
 \subsection{University at Buffalo, New York}
-\cvitem {Android Studio}
+\cvitem {Android}
 {\textbf{Indoor Positioning System:} Developed an Android app that works as an Indoor positioning system based on gyroscope \& magnetometer inputs using Google Maps Android API and IndoorAtlas SDK}
-\cvitem {Scala, Apache Spark \& MongoDB}
-{\textbf{Movie Recommendation:} Developed a movie recommendation system with 10 million ratings from MovieLens database and deployed it on AWS using Scala on Apache Spark MLlib. The UI was built using HTML5, CSS and AngularJS}
+\cvitem {Scala, Spark \& MongoDB}
+{\textbf{Movie Recommendation:} Developed a movie recommendation system using 10 million ratings from MovieLens (University of Minnesota) database and deployed it on AWS using Scala on Apache Spark MLlib. The UI was built using HTML5, CSS and AngularJS}
 \cvitem {Python}
-{\textbf{Face Recognition:} Developed a face recognition system trained and tested using the Yale Face Database from UCSD using NumPy \& SciPy Python extensions}{}
-\vspace*{-1mm}
+{\textbf{Face Recognition:} Developed a face recognition system trained and tested using the Face Database B (Yale University - Computational Vision and Control) using NumPy, SciPy \& matplotlib Python extensions}{}
+\vspace{0.1cm}
 \subsection{JNT University, India}
 \cvitem{Java EE}
 {\textbf{Network Monitor:} Developed a web based network management tool using JSP and MySQL}
-\cvitem{Android SDK \& XMPP}
+\cvitem{Android \& XMPP}
 {\textbf{Messaging:} Developed an Android app which enables students to communicate with their course instructors and get real-time feedback }
+
+\section{Freelance Projects}
+\subsection{Virtus Motors, India}
+\cvitem {Android}
+{\textbf{eBike Sharing App:} Worked with a team of 4 freelance developers to build India's first all-electric bike sharing mobile platform}
+\cvitem {ReactJS, NodeJS \& DynamoDB}
+{\textbf{Admin Dashboard:} I worked independently on developing an administration dashboard that allows end-to-end management and tracking of the assets. Also developed a platform for remote diagnostics and support. }
 \end{document}
